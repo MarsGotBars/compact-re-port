@@ -1,3 +1,28 @@
 main{
-    background: rgb(105, 216, 233);
+    color: var(--text);
+    background: url(../../assets/bg-texture.png) repeat center var(--primary);
+    padding: 2rem;
+    border-radius: 0.75rem;
+    font-family: var(--font-two);
+    object-fit: cover;
+    display: flex;
+    /* border: 2px solid var(--secondary);  */
+    /* change all colors to rgb so I can play with alpha values */
+}
+
+main > div{
+    display: flex;
+    flex-direction: row-reverse;
+    gap: .5rem;
+}
+
+figure{
+    width: 120px;
+    height: 120px;
+    background: #000;
+}
+
+h1{
+    font-size: clamp(1.5rem, 4vw, 2.5rem);
+    font-family: var(--font-one);
 }
